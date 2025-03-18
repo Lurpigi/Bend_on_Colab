@@ -17,6 +17,19 @@ This script will:
 2. Load the Rust environment automatically
 3. Install `hvm` and `bend-lang` via Cargo
 
+## Setting Up the Environment
+
+After installation, add the following command at the beginning of your Colab notebook to ensure that bend is available in the system path:
+
+import os
+os.environ["PATH"] += os.pathsep + os.path.expanduser("~/.cargo/bin")
+
+## Running Bend Scripts
+
+Once installed, you can execute Bend scripts using the following command:
+
+!bend run /content/file.bend
+
 ## Troubleshooting
 
 If you encounter any issues:
