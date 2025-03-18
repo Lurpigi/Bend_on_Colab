@@ -1,2 +1,28 @@
-# BendonColab
-script for installing the parallel language Bend on Google Colab
+# Bend on Google Colab
+
+Welcome to **Bend on Colab**, a simple and automated way to install the Bend programming language on Google Colab. This script ensures a smooth setup by automatically installing Rust, HVM, and Bend without requiring manual intervention.
+
+## Installation Steps
+
+To install Bend on Google Colab, simply run the following commands in a Colab notebook:
+
+```bash
+!wget https://raw.githubusercontent.com/Lurpigi/Bend_on_Colab/main/install_bend.sh -O install_bend.sh
+!bash install_bend.sh
+```
+
+This script will:
+
+1. Install Rust with the default configuration
+2. Load the Rust environment automatically
+3. Install `hvm` and `bend-lang` via Cargo
+
+## Troubleshooting
+
+If you encounter any issues:
+
+- Ensure your Colab session has internet access
+- Restart the runtime if necessary (`Runtime -> Restart runtime` in the Colab menu)
+- Check for any error messages and report them in the **Issues** section
+
+This project is licensed under the MIT License.
