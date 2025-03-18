@@ -21,14 +21,18 @@ This script will:
 
 After installation, add the following command at the beginning of your Colab notebook to ensure that bend is available in the system path:
 
+```bash
 import os
 os.environ["PATH"] += os.pathsep + os.path.expanduser("~/.cargo/bin")
+```
 
 ## Running Bend Scripts
 
 Once installed, you can execute Bend scripts using the following command:
 
+```bash
 !bend run /content/file.bend
+```
 
 ## Troubleshooting
 
