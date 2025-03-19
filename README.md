@@ -7,7 +7,8 @@ Welcome to **Bend on Colab**, a simple and automated way to install the Bend pro
 To install Bend on Google Colab, simply run the following commands in a Colab notebook:
 
 ```bash
-!wget -q https://raw.githubusercontent.com/Lurpigi/Bend_on_Colab/main/install_bend.sh -O install_bend.sh && bash install_bend.sh && rm install_bend.sh
+!wget https://raw.githubusercontent.com/Lurpigi/Bend_on_Colab/main/install_bend.sh -O install_bend.sh
+!bash install_bend.sh
 ```
 
 This script will:
