@@ -7,8 +7,7 @@ Welcome to **Bend on Colab**, a simple and automated way to install the Bend pro
 To install Bend on Google Colab, simply run the following commands in a Colab notebook:
 
 ```bash
-!wget https://raw.githubusercontent.com/Lurpigi/Bend_on_Colab/main/install_bend.sh -O install_bend.sh
-!bash install_bend.sh
+!wget -q https://raw.githubusercontent.com/Lurpigi/Bend_on_Colab/main/install_bend.sh -O install_bend.sh && bash install_bend.sh && rm install_bend.sh
 ```
 
 This script will:
@@ -39,6 +38,7 @@ Once installed, you can execute Bend scripts using the following command:
 If you encounter any issues:
 
 - Ensure your Colab session has internet access
+- If you are using `run-cu` to utilize CUDA, ensure you are connected to a runtime with an Nvidia GPU
 - Restart the runtime if necessary (`Runtime -> Restart runtime` in the Colab menu)
 - Check for any error messages and report them in the **Issues** section
 
