@@ -14,7 +14,7 @@ cargo install hvm
 cargo install bend-lang
 
 echo "Installing NVIDIA runtime..."
-wget https://developer.download.nvidia.com/compute/cuda/12.8.1/local_installers/cuda_12.8.1_570.124.06_linux.run
-sudo sh cuda_12.8.1_570.124.06_linux.run
+!wget -q https://developer.download.nvidia.com/compute/cuda/12.8.1/local_installers/cuda_12.8.1_570.124.06_linux.run -O cuda_installer.run && sudo sh cuda_installer.run --silent --toolkit && rm cuda_installer.run
+
 
 echo "Installation complete!"
